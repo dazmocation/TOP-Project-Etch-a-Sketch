@@ -44,6 +44,10 @@ main {
     width: 25px;
 }
 
+.square:hover {
+    background-color: #333;
+}
+
 footer {
     display: flex;
     height: 4vh;

@@ -22,9 +22,20 @@ main {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50vw;
+}
+
+.sketchBoard {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 400px;
+    border: 5px solid darkgray;
+    background-color: white;
 }
 
 footer {

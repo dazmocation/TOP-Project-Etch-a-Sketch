@@ -38,6 +38,12 @@ main {
     background-color: white;
 }
 
+.square {
+    display: flex;
+    height: 25px;
+    width: 25px;
+}
+
 footer {
     display: flex;
     height: 4vh;

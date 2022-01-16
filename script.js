@@ -3,6 +3,7 @@ const gridOne = document.getElementById('button1');
 const gridTwo = document.getElementById('button2');
 const gridThree = document.getElementById('button3');
 const gridFour = document.getElementById('button4');
+const reset = document.getElementById('reset');
 const black = document.getElementById('black');
 const white = document.getElementById('white');
 const red = document.getElementById('red');
@@ -14,16 +15,21 @@ const purple = document.getElementById('purple');
 
 
 //choose grid size
+let gridSize = 16;
 gridOne.addEventListener('click',function() {
+    gridSize = 16;
     createGrid(16);
 });
 gridTwo.addEventListener('click',function() {
+    gridSize = 32;
     createGrid(32);
 });
 gridThree.addEventListener('click',function() {
+    gridSize = 64;
     createGrid(64)
 });
 gridFour.addEventListener('click',function() {
+    gridSize = 128;
     createGrid(128)
 });
 
@@ -49,7 +55,9 @@ function changeColor(e) {
 }
 
 //reset grid
-
+reset.addEventListener('click', function() {
+    createGrid(gridSize);
+});
 
 //create initial grid
 createGrid(16);

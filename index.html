@@ -14,7 +14,7 @@
     </header>
     <main>
         <div class="container">
-            <div class="container">
+            <div class="container" id="grid-size">
                 <h2>Choose your grid size</h2>
                 <div>
                     <button>16 x 16</button>
@@ -23,21 +23,25 @@
                     <button>128 x 128</button>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" id="color-selector">
                 <h2>Choose your color</h2>
-                <div>
-                    <div class="color" id="black"></div>
-                    <div class="color" id="white"></div>
-                    <div class="color" d="red"></div>
-                    <div class="color" id="orange"></div>
-                    <div class="color" id="yellow"></div>
-                    <div class="color" id="green"></div>
-                    <div class="color" id="blue"></div>
-                    <div class="color" id="purple"></div>
+                <div class="colors">
+                    <div>
+                        <div class="color" id="black"></div>
+                        <div class="color" id="white"></div>
+                        <div class="color" id="red"></div>
+                        <div class="color" id="orange"></div>
+                    </div>
+                    <div>
+                        <div class="color" id="yellow"></div>
+                        <div class="color" id="green"></div>
+                        <div class="color" id="blue"></div>
+                        <div class="color" id="purple"></div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <button>Reset Grid</button>
+            <div class="container" id="reset-button">
+                <button id="reset">Reset Grid</button>
             </div>
         </div>
         <div class="container">

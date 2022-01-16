@@ -49,9 +49,43 @@ function createGrid(gridSize) {
     }
 }
 
+//choose color
+let drawColor = "black";
+black.addEventListener('click',function() {
+    drawColor = "black";
+});
+
+white.addEventListener('click',function() {
+    drawColor = "white";
+});
+
+red.addEventListener('click',function() {
+    drawColor = "red";
+});
+
+orange.addEventListener('click',function() {
+    drawColor = "orange";
+});
+
+yellow.addEventListener('click',function() {
+    drawColor = "yellow";
+});
+
+green.addEventListener('click',function() {
+    drawColor = "green";
+});
+
+blue.addEventListener('click',function() {
+    drawColor = "blue";
+});
+
+purple.addEventListener('click',function() {
+    drawColor = "purple";
+});
+
 //sketch
 function changeColor(e) {
-    e.target.style.backgroundColor = "black";
+    e.target.style.backgroundColor = drawColor;
 }
 
 //reset grid

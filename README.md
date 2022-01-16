@@ -3,4 +3,4 @@ A simple Etch-a-Sketch project.
 
 This project is intended to display knowledge and ability related to the DOM.
 
-Approximate time to complete:  hrs
+Approximate time to complete:  6 hrs

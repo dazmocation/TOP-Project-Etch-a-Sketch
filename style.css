@@ -105,8 +105,6 @@ button {
 .square {
     display: flex;
     background-color: white;
-    height: 32px;
-    width: 32px;
 }
 
 footer {

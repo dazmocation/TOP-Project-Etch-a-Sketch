@@ -28,17 +28,28 @@ gridFour.addEventListener('click',function() {
 });
 
 //create grid
-function createGrid() {
-    for (i = 0; i < 256; i++){
+function createGrid(gridSize) {
+    while (sketchBoard.firstChild) {
+        sketchBoard.removeChild(sketchBoard.firstChild);
+    }
+    for (i = 0; i < gridSize * gridSize; i++){
         const square = document.createElement('div');
         square.className = "square";
+        let box = 512 / gridSize;
+        square.style.width = box + "px";
+        square.style.height = box + "px";
         square.addEventListener('mouseover',changeColor);
         sketchBoard.appendChild(square);
     }
 }
 
+//sketch
 function changeColor(e) {
     e.target.style.backgroundColor = "black";
 }
 
+//reset grid
+
+
+//create initial grid
 createGrid(16);

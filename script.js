@@ -1,5 +1,4 @@
 const sketchBoard = document.getElementById('sketchBoard');
-const square = document.getElementsByClassName('square');
 const gridOne = document.getElementById('button1');
 const gridTwo = document.getElementById('button2');
 const gridThree = document.getElementById('button3');
@@ -15,7 +14,18 @@ const purple = document.getElementById('purple');
 
 
 //choose grid size
-
+gridOne.addEventListener('click',function() {
+    createGrid(16);
+});
+gridTwo.addEventListener('click',function() {
+    createGrid(32);
+});
+gridThree.addEventListener('click',function() {
+    createGrid(64)
+});
+gridFour.addEventListener('click',function() {
+    createGrid(128)
+});
 
 //create grid
 function createGrid() {
@@ -31,4 +41,4 @@ function changeColor(e) {
     e.target.style.backgroundColor = "black";
 }
 
-createGrid();
+createGrid(16);
